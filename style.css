@@ -9,6 +9,7 @@
     --purple:#6250a2;
     --full-white:#ffffff;
     --background-white:#ebebec;
+    --dark-gay:#363637;
     font-family: "Inter", sans-serif;
     text-decoration: none;
     scroll-behavior: smooth;
@@ -32,11 +33,15 @@ body{
     width: 100%;
     height: 70px;
     background-color: var(--full-white);
+    opacity: .97;
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: opacity 0.2s;
     
 
     ul{
@@ -75,9 +80,14 @@ body{
 
             &:hover{
                 color: #363637;
+
             }
 
         }
+    }
+
+    &:hover{
+        opacity: 1;
     }
 }
 
@@ -93,6 +103,9 @@ body{
     display: flex;
     position: relative;
     z-index: 1;
+    gap: 20px;
+    max-height: auto;
+
 
     &::before{
         content: "";
@@ -136,9 +149,14 @@ body{
     align-items: center;
     justify-content: center;
 
+    img{
+        aspect-ratio: 1/1;
+    }
+
 }
 #photo{
-    width: 120%;
+    display: hidden;
+    width: 100%;
     height: 100% ;
     border-radius: 50%;
     scale: 1.4;
@@ -251,6 +269,7 @@ body{
     
 }
 .container__projects{
+    
     display: grid;
     height: auto;
     padding: 40px 20px;
@@ -259,12 +278,12 @@ body{
     justify-items: center;
     align-items: center;
     row-gap: 50px;
-    h2{
+
+    .projects_title{
         position: absolute;
         font-size: 3rem;
         top: -4rem;
         left: 0;
-        text-align: center;
         color: var(--purple);
         font-weight: 800;
 
@@ -387,3 +406,161 @@ body{
     line-height: 1.4;
   }
   
+
+
+.container__technology{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+
+    svg{
+        height: 70px;
+        position: relative;
+    }
+    svg::before{
+        content:"";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: #a25050;
+        top: 0;
+        left: 0;
+        z-index: 20;
+
+    }
+    
+}
+
+.container__skills{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+
+}
+
+ 
+.skills_title{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--purple);
+}
+
+.skills{
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(2,1fr) ;
+    padding:20px 0 0 0 ;
+    
+}
+.skills--1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0 3rem;
+
+    h3{
+        color: var(--purple);
+        text-align: center;
+        margin:0 0 10px ;
+    }
+    li{
+        margin: 15px 0;
+    }
+    span{
+        font-weight: 700;
+    }
+    
+
+
+    
+
+ 
+    
+}
+.skills--2{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0 3rem;
+
+    
+
+    h3{
+        color: var(--purple);
+        text-align: center;
+        margin:0 0 10px ;
+    }
+    li{
+        margin: 15px 0;
+    }
+    span{
+        font-weight: 700;
+    }
+}
+@media (width<768px){
+    .container__projects{
+        grid-template-columns: 1fr;
+    }
+    .information{
+        padding: 0;
+    }
+    .container__section--first{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 80%;
+        height: 200px;
+        max-width: 400px;
+    }
+
+    .container__projects{
+        .projects_title{
+            font-size: 2rem;
+            top: -3rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::after{
+            display: none;
+
+        }
+
+    }
+    
+    .skills{
+        grid-template-columns:1fr;
+        padding: 0 3rem;
+        height: auto;
+        
+    }
+    .skills_title{
+        margin: 10px 0;
+    }
+    .container__skills{
+        height: auto;
+    }
+    
+}
+
+
+.container__footer{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content:space-around;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+    background-color:#5b5b5c;
+   
+
+}
