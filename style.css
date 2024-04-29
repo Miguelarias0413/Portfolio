@@ -149,19 +149,18 @@ body{
     align-items: center;
     justify-content: center;
 
-    img{
-        aspect-ratio: 1/1;
-    }
+  
 
 }
+
 #photo{
     display: hidden;
     width: 100%;
     height: 100% ;
-    border-radius: 50%;
     scale: 1.4;
     object-fit: cover;
     object-position:10px 35%;
+    aspect-ratio: 1/1;
 }
 .information{
     display: flex;
@@ -561,6 +560,10 @@ body{
     position: relative;
     z-index: 1;
     background-color:#5b5b5c;
+
+    h4{
+        color: var(--background-white);
+    }
    
 
 }
