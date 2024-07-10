@@ -266,6 +266,7 @@ body {
   justify-content: center;
   gap: 1rem ;
   font-size: .8rem;
+  
 
 
   .information__paragraph:nth-child(1){
@@ -275,11 +276,13 @@ body {
   
 }
 .information__title {
-  color: var(--purple);
   margin-bottom: 20px;
   font-weight: 900;
   font-size: 2rem;
   border-bottom: 3px solid var(--purple);
+  background-image: linear-gradient( rgb(0, 2, 7), rgba(91, 0, 247, 0.808));
+  color: transparent;
+  background-clip: text;
 }
 .information__socialmedia {
   width: 90%;
