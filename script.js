@@ -59,7 +59,7 @@ function observeSkills(){
 function mouseHoverHandler(){
     const divHover = document.querySelector('.mousehover__element');
     const projectsCards = document.querySelectorAll('.projects__card')
-
+    const items = document.querySelectorAll('.skill__item')
 
     document.addEventListener('mousemove',getMouseMovement)
 
@@ -78,6 +78,7 @@ function mouseHoverHandler(){
         const divHoverContainer = document.querySelector('.mousehover__container');
         function mouseGettingIntoProjectCard(e){
             
+            document.removeEventListener('mousemove',getMouseMovement)
             
             //Establecer Posicion
             e.target.appendChild(divHover);
@@ -89,7 +90,6 @@ function mouseHoverHandler(){
 
                 },10)
                 
-            document.removeEventListener('mousemove',getMouseMovement)
             
             //Establecer ESTILOS
             setTimeout(()=>{
@@ -114,6 +114,7 @@ function mouseHoverHandler(){
             projectCard.addEventListener('mouseenter',mouseGettingIntoProjectCard);
             projectCard.addEventListener('mouseleave',mouseGettingOutFromProjectCard);
         })
+       
     }
  
 }
