@@ -1,8 +1,11 @@
+import Parallax from "parallax-js";
 
-function main(){
+function main(e){
+    console.log(e);
     observeSkills()
     observeSectionsToHeaderElements()
     mouseHoverHandler();
+    parallaxController(e.target.body.clientHeight,e.target.body.clientWidth)
 
 }
 function observeSectionsToHeaderElements(){
@@ -99,9 +102,11 @@ function mouseHoverHandler(){
             
         }
         function mouseGettingOutFromProjectCard(e){
-            divHover.classList.remove('mousehover__element--inside')
             divHoverContainer.appendChild(divHover);
 
+            setTimeout(()=>{
+            })
+            divHover.classList.remove('mousehover__element--inside');
             document.addEventListener('mousemove',getMouseMovement)
             console.log(e.target);
           
@@ -117,6 +122,34 @@ function mouseHoverHandler(){
        
     }
  
+}
+async function parallaxController(h,w){
+    // const scene = document.querySelector('.parallax__container');
+    // const quantityParallaxItems = 10
+
+    // for(let i =1; i<=quantityParallaxItems; i++ ){
+    //     let randomXPosition = Math.floor( Math.random() * w);
+    //     let randomYPosition = Math.floor( Math.random() * h);
+    //     const parallaxItem = document.createElement('div');
+    //     parallaxItem.classList.add('parallax__item');
+    //     parallaxItem.dataset.depth = 1;
+    //     parallaxItem.style.top = `${randomYPosition}px`
+    //     parallaxItem.style.left = `${randomXPosition}px`
+
+    //     console.log('lol');
+    //     console.log(randomXPosition,randomYPosition);
+    //     scene.appendChild(parallaxItem)
+
+    // }
+    
+    // setTimeout(()=>{
+    //     let parallaxInstance = new Parallax(scene);
+    // },2000)
+
+    const scene = document.querySelector('.photo')
+
+    const parallaxImageInstance = new Parallax(scene)
+
 }
 
 addEventListener('DOMContentLoaded',main)
