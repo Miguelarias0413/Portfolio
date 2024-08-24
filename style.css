@@ -282,7 +282,7 @@ body {
     content: "";
     width: 40%;
     height: 40%;
-    background-color: #95720a83;
+    background-color: rgba(197, 148, 0, 0.751);
     position: absolute;
     left: 40%;
     top: 25%;
@@ -803,8 +803,8 @@ body {
     grid-template-columns: 1fr;
 
     .projects__card{
-      max-width: 400px;
-      width: 70%;
+      max-width: 350px;
+      width: 80%;
       padding: 0 10px;
       min-height: 500px;
       
