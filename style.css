@@ -801,7 +801,16 @@ body {
 @media (width<768px) {
   .container__projects {
     grid-template-columns: 1fr;
+
+    .projects__card{
+      max-width: 400px;
+      width: 70%;
+      padding: 0 10px;
+      min-height: 500px;
+      
+    }
   }
+  
   .balls__container {
 
     .svg__ball--container:nth-child(1){
@@ -852,12 +861,16 @@ body {
     padding: 0 3rem;
     height: auto;
   }
+  
   .skills_title {
     font-size: 1.3rem;
     margin: 0 0 30px 0;
   }
   .container__skills {
     height: auto;
+  }
+  .skills--1{
+    padding: 0;
   }
   .photo {
     width: 100%;
