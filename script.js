@@ -62,7 +62,6 @@ function observeSkills() {
 function mouseHoverHandler() {
   const divHover = document.querySelector(".mousehover__element");
   const projectsCards = document.querySelectorAll(".projects__card");
-  const items = document.querySelectorAll(".skill__item");
 
   document.addEventListener("mousemove", getMouseMovement);
 
