@@ -1,7 +1,9 @@
 import Parallax from "parallax-js";
 import observerProjects from "./js/intersectionerMouserHover";
+import parallaxBalls from "./js/parallax";
 function main(e) {
   console.log(e);
+  parallaxBalls()
   observerProjects();
   observeSkills();
   observeSectionsToHeaderElements();

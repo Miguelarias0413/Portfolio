@@ -470,7 +470,7 @@ body {
 
 .projects__card {
   background-color: rgba(255, 255, 255, 0.264);
-  height: 17rem;
+  height: 20rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -513,9 +513,11 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    padding: 10px 30px;
+    padding: 20px 30px;
+
 
     & .titulo-experiencia{
       text-transform: uppercase;
@@ -539,7 +541,6 @@ body {
 
 
     & .descripcion-experiencia{
-      margin: auto;
       flex-basis: calc(100%/1.8); 
       flex-shrink: 0;
       padding: 30px 0 0 0 ;
@@ -549,11 +550,13 @@ body {
     }
 
     & .empresa{
+      margin: 30px 0 0 0;
       font-size: 1rem;
       color: #212121;
       text-decoration: underline;
       font-weight: 700;
       flex-shrink: 0;
+      text-align: end;
       align-self: flex-end;
 
       
@@ -744,6 +747,7 @@ body {
     .projects__card{
       flex-direction: column;
       min-height: 550px;
+      max-height: auto;
       max-width: 450px;
       height: min-max(550px, auto);
 
