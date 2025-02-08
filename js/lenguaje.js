@@ -5,18 +5,29 @@ export default class Lenguages {
   static actualLenguage = null;
 
   static async initialize() {
-    const savedLanguage = localStorage.getItem("language");
+   
+    const savedLanguage = await localStorage.getItem("language");
 
-    //set lenguageObjects
-    const englishResponse = await fetch("../lenguages/english.json");
-    const spanishResponse = await fetch("../lenguages/spanish.json");
+    try {//set lenguageObjects
+      const englishResponse = await fetch("/lenguages/english.json");
+      const spanishResponse = await fetch("/lenguages/spanish.json");
 
-    try {
+      
+      if (!englishResponse || !spanishResponse){
+        throw new Error("El cargue de un json Falló")
+      }
       Lenguages.spanishObject = await spanishResponse.json();
       Lenguages.englishObject = await englishResponse.json();
+
+
+
+
     } catch (Exception) {
       console.error("Error: " + Exception);
     }
+
+    console.log(Lenguages.spanishObject)
+
 
     if (savedLanguage) {
       Lenguages.actualLenguage = savedLanguage;
