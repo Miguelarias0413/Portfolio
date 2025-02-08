@@ -1,0 +1,86 @@
+{
+  "title": "Portfolio - Miguel Arias",
+  "sections": {
+    "headerItems": ["About me", "Experience", "Skills"],
+    "about_me": {
+      "title": "About Me...",
+      "paragraphs": [
+        "My name is Miguel Arias and I am a fullstack developer.",
+        "Passionate about learning new things, I always strive to be better every day in all my personal areas and in my software development skills. I am currently looking for new job opportunities where I can contribute as much as possible with my current knowledge and skills and I am fully willing to learn."
+      ],
+      "social_media": {
+        "github": "Github",
+        "linkedin": "Linkedin"
+      }
+    },
+    "projects": {
+      "title": "WORK EXPERIENCE",
+      "cards": [
+        {
+          "title": "Design and Development Analyst - Support Area",
+          "description": "In this company, I performed many activities from creating stored procedures and implementing new functionalities in the creation of formats, data processing, and creation of banking reports. But mainly I worked in the technical support area, listening to and solving problems of banking clients, delving into and understanding the source code of the application and database.",
+          "technologies": [
+            "Visual Basic",
+            "ASP",
+            "SQL SERVER",
+            "Jquery (JAVASCRIPT)",
+            "ORACLE DB (sql)"
+          ],
+          "company": "TSI - Technology and Information Systems",
+          "date": "2024 - 2025"
+        },
+        {
+          "title": "Fullstack Web Developer at Sipac",
+          "description": "In this company, I worked as a fullstack web developer where I developed web applications and enterprise management systems using technologies such as Laravel (php), Bootstrap, Jquery (JAVASCRIPT), and ORACLE DB (sql) for the development of web applications and enterprise management systems.",
+          "technologies": [
+            "Laravel (php)",
+            "Bootstrap",
+            "Jquery (JAVASCRIPT)",
+            "ORACLE DB (sql)"
+          ],
+          "company": "Universidad Santiago De Cali",
+          "date": "2023 - 2024"
+        }
+      ]
+    },
+    "skills": {
+      "title": "What else do I have to offer?",
+      "items": [
+        {
+          "title": "Good English Proficiency",
+          "description": "In these few years of my life, I have self-taught myself to speak and write in English fluently and with a good command of grammar and vocabulary."
+        },
+        {
+          "title": "Teamwork",
+          "description": "I am a very collaborative person who always seeks to contribute to their team and help their colleagues in whatever they need, and I always seek to learn from others and improve my teamwork skills."
+        },
+        {
+          "title": "Ease of Learning",
+          "description": "I love learning new things. My curiosity and ambition drive me to learn every day, and I always seek to learn from new experiences and the people around me. I always strive to improve my skills as a developer and in other areas of my life."
+        },
+        {
+          "title": "Excellent Communication",
+          "description": "I am a person who has been highlighted on various occasions for being accurate, respectful, and clear in communication with the people around me."
+        }
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JAVASCRIPT",
+        "PHP",
+        "LARAVEL",
+        "GIT",
+        "VITE.JS",
+        "LIVEWIRE",
+        "TAILWIND",
+        "MYSQL",
+        "NPM"
+      ]
+    },
+    "contact": {
+      "title": "Contact Information",
+      "email": "miguelarias0413@gmail.com",
+      "phone": "(+57)3017367323"
+    }
+  }
+}

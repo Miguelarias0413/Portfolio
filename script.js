@@ -1,14 +1,63 @@
 import Parallax from "parallax-js";
 import observerProjects from "./js/intersectionerMouserHover";
 import parallaxBalls from "./js/parallax";
-function main(e) {
-  console.log(e);
+import Lenguage from "./js/lenguaje";
+
+function  main(e) {
+  const div = document.q
   parallaxBalls()
   observerProjects();
   observeSkills();
   observeSectionsToHeaderElements();
   mouseHoverHandler();
   parallaxController(e.target.body.clientHeight, e.target.body.clientWidth);
+  initializeLanguage();
+
+  
+  
+
+
+
+}
+
+async function initializeLanguage(){
+  const mainLanguageSVG = document.getElementById('main__language--image')
+  const svgLanguageImages = document.querySelectorAll('dropped__language--image')
+  // Selectores individuales
+  
+  // Cuando carga la pagina 
+  await Lenguage.initialize();
+  await Lenguage.changePage();
+  changeLanguageMainFlag(mainLanguageSVG)
+  
+  
+  const englishSelector = document.getElementById('selector--english');
+  const spanishSelector = document.getElementById('selector--spanish');
+
+  //logica para cambiar idioma solo con el main Language
+  mainLanguageSVG.addEventListener('click',()=>{
+    Lenguage.setLanguage(Lenguage.getLanguage() == 'spanish' ? 'english' : 'spanish');
+    changeLanguageMainFlag(mainLanguageSVG)
+  })
+
+
+  englishSelector.addEventListener('click',()=>{
+    Lenguage.setLanguage('english')
+    changeLanguageMainFlag(mainLanguageSVG)
+
+  })
+  spanishSelector.addEventListener('click',()=>{
+    Lenguage.setLanguage('spanish')
+    changeLanguageMainFlag(mainLanguageSVG)
+  })
+} 
+function changeLanguageMainFlag(mainFlag){
+  if(Lenguage.getLanguage() == 'english'){
+    mainFlag.src = '/images/united-states-svgrepo-com.svg'
+  } 
+  else if (Lenguage.getLanguage() == 'spanish'){
+    mainFlag.src = '/images/flag-for-flag-spain-svgrepo-com.svg'
+  }
 }
 function observeSectionsToHeaderElements() {
   const headerListItems = document.querySelectorAll(".header ul li a");

@@ -1,0 +1,90 @@
+{
+    "title": "Portfolio - Miguel Arias",
+    "sections": {
+      "headerItems":[
+        "Sobre mí",
+        "Experiencia",
+        "Habilidades"
+      ],
+      "about_me": {
+        "title": "Sobre mi...",
+        "paragraphs": [
+          "Mi nombre es Miguel Arias y soy desarrollador fullstack.",
+          "Apasionado por aprender nuevas cosas, busco siempre ser mejor cada día en todas mis ramas personales y en mis habilidades en el desarrollo de software. Actualmente estoy en busca de nuevas oportunidades laborales en las cuales pueda aportar lo máximo posible con mis conocimientos y habilidades actuales y totalmente dispuesto para aprender."
+        ],
+        "social_media": {
+          "github": "Github",
+          "linkedin": "Linkedin"
+        }
+      },
+      "projects": {
+        "title": "EXPERIENCIA LABORAL",
+        "cards": [
+          {
+            "title": "Analista de Diseño y Desarrollo - Área Soporte",
+            "description": "En esta empresa desarrollé muchas actividades desde la creación de procedimientos almacenados e implementación de nuevas funcionalidades en la creación de formatos, procesamiento de datos y creación de reportes bancarios. Pero principalmente me desempeñé en el área de soporte técnico escuchando y resolviendo problemas de los clientes bancarios adentrándome y comprendiendo código fuente de la aplicación y base de datos.",
+            "technologies": [
+              "Visual Basic",
+              "ASP",
+              "SQL SERVER",
+              "Jquery (JAVASCRIPT)",
+              "ORACLE DB (sql)"
+            ],
+            "company": "TSI - Tecnología y Sistemas de Información",
+            "date": "2024 - 2025"
+          },
+          {
+            "title": "Desarrollador web fullstack en Sipac",
+            "description": "En esta empresa me desempeñé como desarrollador web fullstack en la cual desarrollé aplicaciones web y sistemas de gestión empresarial utilizando tecnologías como Laravel (php), Bootstrap, Jquery (JAVASCRIPT) y ORACLE DB (sql) para el desarrollo de aplicaciones web y sistemas de gestión empresarial.",
+            "technologies": [
+              "Laravel (php)",
+              "Bootstrap",
+              "Jquery (JAVASCRIPT)",
+              "ORACLE DB (sql)"
+            ],
+            "company": "Universidad Santiago De Cali",
+            "date": "2023 - 2024"
+          }
+        ]
+      },
+      "skills": {
+        "title": "¿Qué más tengo por ofrecer?",
+        "items": [
+          {
+            "title": "Buen Manejo de inglés",
+            "description": "En estos pocos años de mi vida he aprendido de manera autodidacta de una manera decente a hablar y escribir en inglés de manera fluida y con un buen manejo de la gramática y vocabulario."
+          },
+          {
+            "title": "Trabajo en equipo",
+            "description": "Soy una persona muy colaborativa y que siempre busca aportar a su equipo y ayudar a sus compañeros en lo que necesiten y siempre busco aprender de los demás y mejorar mis habilidades en el trabajo en equipo."
+          },
+          {
+            "title": "Facilidad de aprendizaje",
+            "description": "Me encanta aprender cosas nuevas. Mi curiosidad y ambición me llevan a aprender día a día y busco siempre aprender de nuevas experiencias y de las personas que me rodean, siempre busco mejorar mis habilidades como desarrollador y en otras áreas de mi vida."
+          },
+          {
+            "title": "Excelente comunicación",
+            "description": "Soy una persona la cual he sido destacada en distintas ocasiones por certera, respetuosa y clara en la comunicación con las personas que me rodean."
+          }
+        ],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JAVASCRIPT",
+          "PHP",
+          "LARAVEL",
+          "GIT",
+          "VITE.JS",
+          "LIVEWIRE",
+          "TAILWIND",
+          "MYSQL",
+          "NPM"
+        ]
+      },
+      "contact": {
+        "title": "Información de contacto",
+        "email": "miguelarias0413@gmail.com",
+        "phone": "(+57)3017367323"
+      }
+    }
+  }
