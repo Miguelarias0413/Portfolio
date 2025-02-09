@@ -26,7 +26,6 @@ export default class Lenguages {
       console.error("Error: " + Exception);
     }
 
-    console.log(Lenguages.spanishObject)
 
 
     if (savedLanguage) {
@@ -55,9 +54,7 @@ export default class Lenguages {
       const languageObject = await Lenguages.actualLenguage === "english" ? Lenguages.englishObject : Lenguages.spanishObject;
 
       if (languageObject) {
-        console.log(Lenguages.actualLenguage);
-        console.log(languageObject);
-
+    
         document.title = languageObject.title;
 
         // Update language of the header
@@ -91,18 +88,16 @@ export default class Lenguages {
         document.querySelector(".skills_title").textContent =
           languageObject.sections.skills.title;
 
-        const contactTitle = languageObject.sections.contact.title;
-        const contactEmail = languageObject.sections.contact.email;
-        const contactPhone = languageObject.sections.contact.phone;
-        document.querySelector(".container__footer h4").textContent =
-          contactTitle;
-        document.querySelector(
-          ".container__footer p:nth-child(2)"
-        ).textContent = contactEmail;
-        document.querySelector(
-          ".container__footer p:nth-child(3)"
-        ).textContent = contactPhone;
+
       }
+
+      document.querySelectorAll('.skill__item').forEach((item,index)=>{
+        item.children[0].textContent = languageObject.sections.skills.items[index].title // titulo
+        item.children[1].textContent = languageObject.sections.skills.items[index].description //description
+
+        
+      })
+
     } catch (error) {
       console.error(error);
     }

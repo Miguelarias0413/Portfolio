@@ -2,9 +2,9 @@ import Parallax from "parallax-js";
 import observerProjects from "./js/intersectionerMouserHover";
 import parallaxBalls from "./js/parallax";
 import Lenguage from "./js/lenguaje";
-
+import ObserveBackgroundBalls from "./js/backgroundBallsObserver";
 function main(e) {
-  const div = document.q;
+  ObserveBackgroundBalls()
   parallaxBalls();
   observerProjects();
   observeSkills();
@@ -85,27 +85,36 @@ function observeSectionsToHeaderElements() {
   }
 }
 function observeSkills() {
-  // const skillItems = document.querySelectorAll('.skill__item');
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        animateSkillsWithDelay(entry.target);
-        observer.unobserve(entry.target);
-      }
+  try {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          
+          animateSkillsWithDelay(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
     });
-  });
-
-  observer.observe(document.querySelector(".skills__items__container"));
-
-  async function animateSkillsWithDelay(contenedorPadre) {
-    const habilidadesHijos = contenedorPadre.children;
-    Array.from(habilidadesHijos).forEach((el, index) => {
-      let miliseconds = 100;
-      setTimeout(() => {
-        el.classList.add("animationEaseIn");
-      }, miliseconds * index);
-    });
+  
+    observer.observe(document.querySelector("#skills__container"));
+  
+    async function animateSkillsWithDelay(contenedorPadre) {
+      const habilidadesHijos = Array.from(contenedorPadre.children).filter(hijo => !hijo.classList.contains('skills_title'));
+      
+      Array.from(habilidadesHijos).forEach((el, index) => {
+        let miliseconds = 100;
+        setTimeout(() => {
+          el.classList.add("animationEaseIn");
+        }, miliseconds * index);
+      });
+    }
+    
+  } catch (error) {
+    console.error('e = '+ error);
+    
   }
+  // const skillItems = document.querySelectorAll('.skill__item');
+ 
 }
 function mouseHoverHandler() {
   const divHover = document.querySelector(".mousehover__element");
