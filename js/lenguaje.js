@@ -1,5 +1,5 @@
 export default class Lenguages {
-  static actualLenguage = "english";
+  static actualLenguage = "spanish";
   static englishObject = null;
   static spanishObject = null;
   static actualLenguage = null;
@@ -33,6 +33,7 @@ export default class Lenguages {
     } else {
       // If no language is set english by default
       localStorage.setItem("language", "english");
+      Lenguages.actualLenguage = "english";
     }
   }
 
