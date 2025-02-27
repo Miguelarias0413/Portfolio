@@ -848,11 +848,11 @@ body {
 
     .svg__ball--container:nth-child(4).noTranslate {
       transform: translate(20px, 0) rotate(-40deg);
-      transition: transform 1.5s ease-in-out;
+      transition: transform .8s ease-in-out;
     }
     .svg__ball--container:nth-child(3).noTranslate {
       transform: none;
-      transition: all 1.5s ease-in;
+      transition: all .8s ease-in;
     }
   }
   .information {
