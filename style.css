@@ -775,12 +775,12 @@ body {
     /* filter: grayscale(0); */
   }
   & > div .info__portfolio--project {
-    opacity: 0 ;
+    opacity: 0;
     transition: opacity 0.5s;
     /* filter: grayscale(0); */
   }
   & > div:hover .info__portfolio--project {
-    opacity: 1 ;
+    opacity: 1;
     /* filter: grayscale(0); */
   }
   & > div:hover:nth-child(2)::after,
@@ -801,31 +801,28 @@ body {
 .grid__portfolio--item1 {
   grid-column: 1 / 8;
   grid-row: 1 / 6;
-  
-  .info__portfolio--project{
+
+  .info__portfolio--project {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    h3{
+    h3 {
       color: #ffbf00;
       width: 100%;
       font-size: 2rem;
       text-align: center;
       text-transform: uppercase;
     }
-    p{
-      
-      
-      
+    p {
     }
-    footer{
+    footer {
       flex-basis: 30%;
       display: flex;
       justify-content: center;
       gap: 3rem;
       align-items: center;
 
-      svg{
+      svg {
         width: 3rem;
         height: 3rem;
         margin: 0 10px;
@@ -836,12 +833,17 @@ body {
 .grid__portfolio--item2 {
   grid-column: 8/11;
   grid-row: 1 / 11;
-  .info__portfolio--project{
+  .info__portfolio--project {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    h3{
-      background: linear-gradient(to right, rgb(255, 0, 225) ,white,rgb(0, 207, 244));
+    h3 {
+      background: linear-gradient(
+        to right,
+        rgb(255, 0, 225),
+        white,
+        rgb(0, 207, 244)
+      );
       width: 10px;
       font-size: 2rem;
       text-align: center;
@@ -852,36 +854,32 @@ body {
       text-transform: uppercase;
       font-weight: 800;
     }
-    p{
-      
-      
-      
+    p {
     }
-    footer{
+    footer {
       flex-basis: 30%;
       display: flex;
       justify-content: center;
       gap: 3rem;
       align-items: center;
 
-      svg{
+      svg {
         width: 3rem;
         height: 3rem;
         margin: 0 10px;
       }
     }
   }
-  
 }
 .grid__portfolio--item3 {
   grid-column: 1 / 7;
   grid-row: 6 / 11;
-  .info__portfolio--project{
+  .info__portfolio--project {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    h3{
-      background: linear-gradient(to right, rgb(173, 255, 179) ,rgb(0, 255, 0));
+    h3 {
+      background: linear-gradient(to right, rgb(173, 255, 179), rgb(0, 255, 0));
       width: 10px;
       font-size: 2rem;
       text-align: center;
@@ -892,19 +890,16 @@ body {
       text-transform: uppercase;
       font-weight: 800;
     }
-    p{
-      
-      
-      
+    p {
     }
-    footer{
+    footer {
       flex-basis: 30%;
       display: flex;
       justify-content: center;
       gap: 3rem;
       align-items: center;
 
-      svg{
+      svg {
         width: 3rem;
         height: 3rem;
         margin: 0 10px;
@@ -915,7 +910,7 @@ body {
 .grid__portfolio--item4 {
   grid-column: 7 / 8;
   grid-row: 6 / 11;
- 
+
   background: linear-gradient(to bottom, white, #eabd3969, #ffbf0069);
 }
 
@@ -998,6 +993,135 @@ body {
     opacity: 1;
     transform: scale(1);
   }
+}
+.container__technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin: 300px 0;
+  width: 100%;
+  min-height: auto !important ;
+  height: auto !important ;
+
+  position: relative;
+  background-color: transparent;
+
+  .technologies_title {
+    position: absolute;
+    font-size: 3rem;
+    top: -7rem;
+    left: 0;
+    color: #211900;
+    font-weight: 800;
+    text-shadow: #ffffff 0 0 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .technology__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+
+    svg {
+      width: 60px;
+      height: 60px;
+      
+    }
+   
+
+  }
+
+  .technology__item:nth-child(2) {
+    position: relative;
+    &::before{
+      content: " ";
+      width: 115%;
+      height: 115%;
+      background: linear-gradient(to bottom, rgb(255, 251, 0),rgba(170, 0, 255, 0.655));
+      position: absolute;
+      z-index: -1;
+      border-radius: inherit;
+      filter: blur(5px);
+    }
+
+    svg{
+      color: rgb(136, 0, 255);
+    }
+  }
+  .technology__item:nth-child(3) {
+    box-shadow: 0 0 20px 5px rgb(255, 111, 0);
+
+    svg{
+      color: rgb(255, 111, 0);
+    }
+  }
+  .technology__item:nth-child(4) {
+    box-shadow: 0 0 20px 5px #0095ff;
+
+    svg{
+      color: #0095ff;
+    }
+  }
+  .technology__item:nth-child(5) {
+    box-shadow: 0 0 20px 5px #fff700;
+
+    svg{
+      color: #d0c900;
+    }
+  }.technology__item:nth-child(6) {
+    box-shadow: 0 0 20px 5px #016dba;
+
+    svg{
+      color: #016dba;
+    }
+  }.technology__item:nth-child(7) {
+    box-shadow: 0 0 20px 5px #0095ff;
+
+    svg{
+      color: #0095ff;
+    }
+  }.technology__item:nth-child(8) {
+    position: relative;
+
+    &::before{
+      content: " ";
+      width: 115%;
+      height: 115%;
+      background: linear-gradient(to top, red,rgb(247, 0, 255));
+      position: absolute;
+      z-index: -1;
+      border-radius: inherit;
+      filter: blur(5px);
+    }
+
+    svg{
+      color: #ff9900;
+    }
+  }.technology__item:nth-child(9) {
+    box-shadow: 0 0 20px 5px #fe0000;
+
+    svg{
+      color: #fe0000;
+    }
+  }.technology__item:nth-child(10) {
+    box-shadow: 0 0 20px 5px #00eaff;
+
+    svg{
+      color: #028d99;
+    }
+  }.technology__item:nth-child(11) {
+    box-shadow: 0 0 20px 5px #000000;
+
+    svg{
+      color: #000000;
+    }
+  }
+  
 }
 
 @media (width<=768px) {
@@ -1114,6 +1238,16 @@ body {
       padding: 0 0 0 10px;
     }
   }
+  .container__technologies {
+    .technologies_title {
+      font-size: 2rem;
+      top: -9rem;
+      width: 100%;
+      padding: 0 0 0 10px;
+      text-decoration: dashed;
+    }
+
+  }
   .container__portfolio {
     .portfolio_title {
       font-size: 2rem;
@@ -1125,9 +1259,9 @@ body {
       font-size: 1.4rem;
       position: absolute;
       z-index: 101;
-      top:50%  ;
+      top: 50%;
       left: 50%;
-      font-weight:900;
+      font-weight: 900;
       transform: translate(-50%, -50%);
     }
     & > div > .info__portfolio--project > p {

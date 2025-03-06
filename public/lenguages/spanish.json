@@ -47,6 +47,21 @@
           }
         ]
       },
+      "portfolio": {
+        "title" : "PROYECTOS PERSONALES",
+        "exzaltia" :{
+          "description": " Exzaltia es un proyecto personal en el cual se desarrolló un ecommerce de venta de productos de venta de ropa, con autenticación de usuarios, carrito de compras, categorias de productos y productos, y un panel de administración para la gestion de los productos y categorias."
+        },
+        "pokearias" :{
+          "description": " PokeArias Es una Aplicacion Web Creada con la nueva tecnologia Astro junto con Typescript, el cual puedes ver todas las estadisticas de los pokemones con unas transiciones increibles y de manera muy bien hecha y ordenada."
+        },
+        "acortarias" :{
+          "description" : "Acortarias es un acortador de URL en el cual puedes acortar tus enlaces web, en donde esta vez no compartes publicidad intermedia, si no que es completamente gratis y sin embargo, se comparten un mensaje por el creador al atravesar la URL, donde puedes compartir tu filosofia de vida, tu pagina web, tu red social, etc. "
+        }
+      },
+      "technologies":{
+        "title": "Tecnologias que uso para desarrollar"
+      },
       "skills": {
         "title": "¿Qué más tengo por ofrecer?",
         "items": [

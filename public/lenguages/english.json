@@ -43,6 +43,21 @@
         }
       ]
     },
+    "portfolio": {
+      "title" : "PERSONAL PROJECTS",
+      "exzaltia": {
+        "description": "Exzaltia is a personal project in which an ecommerce for selling clothing products was developed, with user authentication, shopping cart, product categories and products, and an administration panel for managing products and categories."
+      },
+      "pokearias": {
+        "description": "PokeArias is a web application created with the new Astro technology along with Typescript, where you can see all the statistics of the Pokémon with incredible transitions and in a very well-made and organized way."
+      },
+      "acortarias": {
+        "description": "Acortarias is a URL shortener where you can shorten your web links, where this time you do not share intermediate advertising, but it is completely free and yet, a message from the creator is shared when traversing the URL, where you can share your life philosophy, your website, your social network, etc."
+      }
+    },
+    "technologies":{
+      "title": "Technologies that i use in my projects"
+    },
     "skills": {
       "title": "What else do I have to offer?",
       "items": [

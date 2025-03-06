@@ -86,8 +86,7 @@ export default class Lenguages {
             project.description;
         });
 
-        document.querySelector(".skills_title").textContent =
-          languageObject.sections.skills.title;
+        document.querySelector(".skills_title").textContent = languageObject.sections.skills.title;
 
 
       }
@@ -95,12 +94,20 @@ export default class Lenguages {
       document.querySelectorAll('.skill__item').forEach((item,index)=>{
         item.children[0].textContent = languageObject.sections.skills.items[index].title // titulo
         item.children[1].textContent = languageObject.sections.skills.items[index].description //description
-
-        
       })
 
+      // //proyectos personales portfolio_title
+        document.querySelector('.portfolio_title').textContent = languageObject.sections.portfolio.title;      
+       document.querySelector('#exzaltia__description').textContent = languageObject.sections.portfolio.exzaltia.description;
+       document.querySelector('#pokearias__description').textContent = languageObject.sections.portfolio.pokearias.description;
+       document.querySelector('#acortarias__description').textContent = languageObject.sections.portfolio.acortarias.description;
+
+       document.querySelector('.technologies_title').textContent = languageObject.sections.technologies.title;
+
+      
+
     } catch (error) {
-      console.error(error);
+      console.error("mine" + error );
     }
   }
 }
